@@ -231,7 +231,7 @@ function writeToFile(markdown) {
 }
 
 // function for testing application with mockData
-function test() {
+function testApp() {
 
     console.log(`
     ============================================
@@ -348,4 +348,4 @@ init();
 
 // TEST #2
 // UNCOMMENT CODE BLOCK BELOW TO TEST APPLICATION USING mockData 
-// test();
+// testApp();
