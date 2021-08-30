@@ -230,8 +230,8 @@ function writeToFile(markdown) {
 
 }
 
-// TODO: Create a function to initialize app
-function init() {
+// function for testing application with mockData
+function test() {
 
     console.log(`
     ============================================
@@ -283,8 +283,69 @@ function init() {
 
 }
 
+// TODO: Create a function to initialize app
+function init() {
+
+    console.log(`
+    ============================================
+    ~~~~~~~~~~~~~ README GENERATOR ~~~~~~~~~~~~~
+    ============================================
+    `)
+
+    inquirer
+
+        // INTRODUCE THE USER TO THE APPLICATION AND ASK IF THEY WOULD LIKE TO START
+        .prompt([
+            {
+                type: 'confirm',
+                name: 'introduction',
+                message: 'Ready to create a README for your project?',
+                validate: introduction => {
+                    if (introduction) {
+                        return true;
+                    } else {
+                        console.log('Please enter [y] to start or [n] to end!');
+                        return false;
+                    }
+                }
+            }
+        ])
+        .then((confirmation) => {
+
+            // IF USER DECIDES TO START PROCESS, THEN LOGIC GOES THROUGH QUESTIONS ARRAY
+            if (confirmation.introduction) {
+                return inquirer.prompt(questions)
+                    .then((answers) => {
+                        return generateMarkdown(answers);
+                    })
+                    .then((markdown) => {
+                        return writeToFile(markdown);
+                    })
+                    .then((data) => {
+                        console.log(data)
+                    })
+                    .catch((err) => {
+                        console.log(err);
+                    });;
+
+                // IF USER DECIDES TO NOT START, THEN APPLICATION ENDS
+            } else {
+                return console.log("Goodbye!");
+            }
+        })
+
+}
+
 // Function call to initialize app
 init();
 
-// TESTS
+//====================== TESTS ======================
+// COMMENT OUT INIT() CALL ABOVE BEFORE PROCEEDING
+
+// TEST #1
+// UNCOMMENT CODE BLOCK BELOW TO TEST generateMarkdown FUNCTION
 // console.log(generateMarkdown(mockData));
+
+// TEST #2
+// UNCOMMENT CODE BLOCK BELOW TO TEST APPLICATION USING mockData 
+// test();
