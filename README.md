@@ -1,5 +1,5 @@
 # README Generator
-![MIT License badge]](https://img.shields.io/badge/license-MIT_License-green)
+![MIT License badge](https://img.shields.io/badge/license-MIT_License-green)
 
  ## Description
  Node.JS application for generating a README file through command line prompts
