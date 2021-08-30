@@ -17,7 +17,14 @@
     git clone git@github.com:anthonypena97/README-generator.git
 
 ## Usage
-After installation, open terminal in the applications path and enter node index.js, this will begin the application, once confirming you would like the question process to begin, you will be prompted with various questions in order to populate your README file. If succeful, you will receive a message in the terminal stating your file is complete. You will be able to locate your README within the dist folder in the root folder of the application. Remember to move or copy this new README file as it gets replaced after everytime the application is called. if you must restart, or would like to leave the application during the question process - type control +  c in the terminal.
+After installation, open terminal in the applications path and enter node index.js into the command line. 
+Once confirming you would like the question process to begin, you will be prompted with various questions in order to populate your README file. 
+If succesful, you will receive a message in the terminal stating your file is complete. 
+You will be able to locate your README within the dist folder in the root folder of the application. 
+
+Remember to move or copy this new README file as it gets replaced after everytime the application is called. 
+
+if you must restart, or would like to leave the application during the question process - type control +  c in the terminal.
 
 ## License
   MIT License
