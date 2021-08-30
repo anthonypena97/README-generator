@@ -12,8 +12,7 @@ function renderLicenseBadge(license) {
 
   } else {
 
-    return `
-    ${license} badge`
+    return `${license} badge`
 
   }
 
@@ -31,8 +30,7 @@ function renderLicenseLink(license) {
 
   } else {
 
-    return `
-    https://img.shields.io/badge/license-${linkName}-green`
+    return `https://img.shields.io/badge/license-${linkName}-green`
 
   }
 
@@ -50,12 +48,11 @@ function renderLicenseSection(license, name) {
 
   } else {
 
-    return `
-    ${license}
+    return `${license}
     
-    Copyright (c) ${year} ${name}
+Copyright (c) ${year} ${name}
 
-    ${licenseText(license)}`
+${licenseText(license)}`
 
   }
 
@@ -65,8 +62,7 @@ function renderInstallation(deployed_link, installation, confirm_installation) {
 
   if (confirm_installation) {
 
-    return `
-    ${installation}`
+    return `${installation}`
 
   } else {
 
@@ -80,8 +76,7 @@ function renderTests(confirm_test, tests) {
 
   if (confirm_test) {
 
-    return `
-    ${tests} `
+    return `${tests}`
 
   } else {
 
@@ -94,8 +89,7 @@ function renderContributing(confirm_guidelines, additional_guidelines) {
 
   if (confirm_guidelines) {
 
-    return `
-    ${additional_guidelines} `
+    return `${additional_guidelines} `
 
   } else {
 
@@ -111,38 +105,38 @@ function generateMarkdown(questionsData) {
   const { project_title, description, github, name, email, confirm_test, confirm_installation, deployed_link, installation, usage, license, confirm_guidelines, tests, additional_guidelines } = questionsData;
 
   return `# ${project_title}
-  ![${renderLicenseBadge(license)}](${renderLicenseLink(license)})
+![${renderLicenseBadge(license)}](${renderLicenseLink(license)})
 
-  ## Description
-  ${description}
+## Description
+${description}
 
-  ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-  ## Installation
-  ${renderInstallation(deployed_link, installation, confirm_installation)}
+## Installation
+${renderInstallation(deployed_link, installation, confirm_installation)}
 
-  ## Usage
-  ${usage}
+## Usage
+${usage}
 
-  ## License
-  ${renderLicenseSection(license, name)}
+## License
+${renderLicenseSection(license, name)}
 
-  ## Contributing
-  ${renderContributing(confirm_guidelines, additional_guidelines)}
+## Contributing
+${renderContributing(confirm_guidelines, additional_guidelines)}
 
-  ## Tests
-  ${renderTests(confirm_test, tests)}
+## Tests
+${renderTests(confirm_test, tests)}
 
-  ## Questions
-  For any inquiries or questions, please contact ${name} via:
-  * GitHub: [${github}](https://github.com/${github})
-  * Email: <${email}>`;
+## Questions
+For any inquiries or questions, please contact ${name} via:
+* GitHub: [${github}](https://github.com/${github})
+* Email: <${email}>`;
 
 };
 
