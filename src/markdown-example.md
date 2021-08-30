@@ -1,34 +1,39 @@
-# Foobar
+# PROJECT TITLE
+![MIT License badge](https://img.shields.io/badge/license-MIT_License-green)
 
-Foobar is a Python library for dealing with word pluralization.
+## Description
+
+Here goes the project description 
+
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
-pip install foobar
+
 ```
 
 ## Usage
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Contributing
+
+## Tests
+
+## Questions
+For any inquiries regarding README.gen, please contact Jake Pedigo via:
+* GitHub: [anthonypena97](https://github.com/anthonypena97)
+* Email: <apena5b@alumni.jh.edu>
