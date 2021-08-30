@@ -62,7 +62,9 @@ function renderInstallation(deployed_link, installation, confirm_installation) {
 
   if (confirm_installation) {
 
-    return `${installation}`
+    return `${'```'}
+${installation}
+${'```'}`
 
   } else {
 
