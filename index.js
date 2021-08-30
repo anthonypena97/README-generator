@@ -8,14 +8,15 @@ const mockData =
     name: 'Anthony Pena',
     github: 'anthonypena97',
     email: 'apena5@alumni.jh.edu',
-    project_title: 'Weather Dashboard',
-    description: 'Application for collecting weather data and forecast',
-    confirmInstallation: false,
+    project_title: 'README Generator',
+    description: 'Node application for generating a project README file',
+    confirm_installation: true,
+    installation: 'git clone git@github.com:anthonypena97/README-generator.git',
     depolyed_link: 'weather.com',
-    usage: 'Visit deployed site',
-    licencse: 'MIT License',
-    confirmation_guidelines: false,
-    confirmation_test: false
+    usage: 'Enter city name in input field.',
+    license: 'MIT License',
+    confirm_guidelines: false,
+    confirm_test: false
 }
 
 
@@ -90,7 +91,7 @@ const questions = [
     },
     {
         type: 'confirm',
-        name: 'confirmInstallation',
+        name: 'confirm_installation',
         message: 'Would you like to enter some information on the installation process [y] or provide a deployed link [n] ?',
         validate: installation => {
             if (installation) {
@@ -159,11 +160,11 @@ const questions = [
         type: 'list',
         name: 'licencse',
         message: 'Which license will you be using for this project?',
-        choices: ['MIT License', 'GNU GPLv3', 'GNU AGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'Boost Software License 1.0', 'The Unlicense']
+        choices: ['MIT License', 'GNU GPLv3', 'GNU AGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'Boost Software License 1.0', 'The Unlicense', 'None']
     },
     {
         type: 'confirm',
-        name: 'confirmation_guidelines',
+        name: 'confirm_guidelines',
         message: 'Would you like to provide additional contribution guidelines or simply include the Contributer Convenant?',
         validate: installation => {
             if (installation) {
@@ -176,7 +177,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'additinal_guidelines',
+        name: 'additional_guidelines',
         message: 'Please provide additional guidelines for contributers:',
         when: ({ confirmInstallation }) => {
             if (confirmInstallation) {
@@ -188,7 +189,7 @@ const questions = [
     },
     {
         type: 'confirm',
-        name: 'confirmation_test',
+        name: 'confirm_test',
         message: 'Would you like to provide information on how to test your project?',
         validate: installation => {
             if (installation) {
@@ -201,7 +202,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'testing',
+        name: 'tests',
         message: 'Please provide information for testing your project: ',
         when: ({ confirmation_test }) => {
             if (confirmation_test) {
@@ -223,10 +224,7 @@ function writeToFile(markdown) {
                 return;
             }
 
-            resolve({
-                ok: true,
-                message: 'File created'
-            });
+            resolve("README SUCCESSFULLY CREATED! VISIT THE DIST FOLDER! :~)");
         });
     });
 
@@ -289,4 +287,4 @@ function init() {
 init();
 
 // TESTS
-// generateMarkdown(mockData);
+// console.log(generateMarkdown(mockData));
