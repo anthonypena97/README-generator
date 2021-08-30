@@ -33,7 +33,7 @@ After installation, open terminal in the applications path and enter node index.
 ## Contributing
 Please refer to the [Contributor Covenenant](https://www.contributor-covenant.org/) for guidelines on contributing on this project.
 
- ## Tests
+## Tests
   
  Instructions for testing application functions are found at the bottom of the index.js file. 
 
