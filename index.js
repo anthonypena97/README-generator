@@ -106,8 +106,8 @@ const questions = [
         type: 'input',
         name: 'installation',
         message: 'Please describe the installation process: (Required)',
-        when: ({ confirmInstallation }) => {
-            if (confirmInstallation) {
+        when: ({ confirm_installation }) => {
+            if (confirm_installation) {
                 return true;
             } else {
                 return false;
@@ -126,8 +126,8 @@ const questions = [
         type: 'input',
         name: 'depolyed_link',
         message: 'Provide the deployed link: (Required)',
-        when: ({ confirmInstallation }) => {
-            if (!confirmInstallation) {
+        when: ({ confirm_installation }) => {
+            if (!confirm_installation) {
                 return true;
             } else {
                 return false;
@@ -158,7 +158,7 @@ const questions = [
 
     {
         type: 'list',
-        name: 'licencse',
+        name: 'license',
         message: 'Which license will you be using for this project?',
         choices: ['MIT License', 'GNU GPLv3', 'GNU AGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'Boost Software License 1.0', 'The Unlicense', 'None']
     },
@@ -179,8 +179,8 @@ const questions = [
         type: 'input',
         name: 'additional_guidelines',
         message: 'Please provide additional guidelines for contributers:',
-        when: ({ confirmInstallation }) => {
-            if (confirmInstallation) {
+        when: ({ confirm_guidelines }) => {
+            if (confirm_guidelines) {
                 return true;
             } else {
                 return false;
@@ -204,8 +204,8 @@ const questions = [
         type: 'input',
         name: 'tests',
         message: 'Please provide information for testing your project: ',
-        when: ({ confirmation_test }) => {
-            if (confirmation_test) {
+        when: ({ confirm_test }) => {
+            if (confirm_test) {
                 return true;
             } else {
                 return false;
