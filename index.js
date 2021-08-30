@@ -7,16 +7,16 @@ const mockData =
 {
     name: 'Anthony Pena',
     github: 'anthonypena97',
-    email: 'apena5@alumni.jh.edu',
+    email: 'anthony-e-p3na@gmail.com',
     project_title: 'README Generator',
-    description: 'Node application for generating a project README file',
+    description: 'Node.JS application for generating a README file through command line prompts',
     confirm_installation: true,
     installation: 'git clone git@github.com:anthonypena97/README-generator.git',
-    depolyed_link: 'weather.com',
-    usage: 'Enter city name in input field.',
+    usage: '- enter node index.js in terminal',
     license: 'MIT License',
     confirm_guidelines: false,
-    confirm_test: false
+    confirm_test: true,
+    tests: 'Instructions for testing application functions are found at the bottom of the index.js file.'
 }
 
 
@@ -316,6 +316,7 @@ function init() {
             if (confirmation.introduction) {
                 return inquirer.prompt(questions)
                     .then((answers) => {
+                        console.log(answers);
                         return generateMarkdown(answers);
                     })
                     .then((markdown) => {
