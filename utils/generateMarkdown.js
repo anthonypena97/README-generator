@@ -13,7 +13,7 @@ function renderLicenseBadge(license) {
   } else {
 
     return `
-    ![${license} badge]`
+    ${license} badge`
 
   }
 
