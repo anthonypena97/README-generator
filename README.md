@@ -3,6 +3,10 @@
 
 ![README-Generator-Demo](https://user-images.githubusercontent.com/79285555/131401795-6c4b3038-4b0f-4aaa-8de6-3ab4ffe44a66.gif)
 
+Web page written with Javascript
+
+Node.JS Runtime is used in this application. The Inquirer.js node package is used as well.
+
  ## Description
  Node.JS application for generating a README file through command line prompts
 
@@ -17,6 +21,10 @@
  ## Installation
   
     git clone git@github.com:anthonypena97/README-generator.git
+    
+    npm i
+    
+    node index.js
 
 ## Usage
 - After installation, open terminal in the applications path and enter node index.js into the command line. 
