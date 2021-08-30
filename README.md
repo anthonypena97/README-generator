@@ -1,27 +1,25 @@
 # README Generator
-  ![
-    ![MIT License badge]](
-    https://img.shields.io/badge/license-MIT_License-green)
+![MIT License badge]](https://img.shields.io/badge/license-MIT_License-green)
 
-  ## Description
-  Node.JS application for generating a README file through command line prompts
+ ## Description
+ Node.JS application for generating a README file through command line prompts
 
-  ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
+ ## Table of Contents
+ * [Installation](#installation)
+ * [Usage](#usage)
+ * [License](#license)
+ * [Contributing](#contributing)
+ * [Tests](#tests)
+ * [Questions](#questions)
 
-  ## Installation
+ ## Installation
   
     git clone git@github.com:anthonypena97/README-generator.git
 
-  ## Usage
-  ___
+## Usage
+After installation, open terminal in the applications path and enter node index.js, this will begin the application, once confirming you would like the question process to begin, you will be prompted with various questions in order to populate your README file. If succeful, you will receive a message in the terminal stating your file is complete. You will be able to locate your README within the dist folder in the root folder of the application. Remember to move or copy this new README file as it gets replaced after everytime the application is called. if you must restart, or would like to leave the application during the question process - type control +  c in the terminal.
 
-  ## License
+## License
   
     MIT License
     
@@ -33,14 +31,14 @@
             
     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-  ## Contributing
-  Please refer to the [Contributor Covenenant](https://www.contributor-covenant.org/) for guidelines on contributing on this project.
+## Contributing
+Please refer to the [Contributor Covenenant](https://www.contributor-covenant.org/) for guidelines on contributing on this project.
 
-  ## Tests
+ ## Tests
   
-    Instructions for testing application functions are found at the bottom of the index.js file. 
+ Instructions for testing application functions are found at the bottom of the index.js file. 
 
-  ## Questions
-  For any inquiries or questions, please contact Anthony Pena via:
-  * GitHub: [anthonypena97](https://github.com/anthonypena97)
-  * Email: <apena5@alumni.jh.edu>
+## Questions
+For any inquiries or questions, please contact Anthony Pena via:
+* GitHub: [anthonypena97](https://github.com/anthonypena97)
+* Email: <apena5@alumni.jh.edu>
