@@ -20,7 +20,7 @@ Node.JS Runtime is used in this application. The Inquirer.js node package is use
 
  ## Installation
   
-```console
+```bash
 git clone git@github.com:anthonypena97/README-generator.git
     
 npm i
