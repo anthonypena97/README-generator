@@ -66,14 +66,11 @@ function renderInstallation(deployed_link, installation, confirm_installation) {
   if (confirm_installation) {
 
     return `
-    ${'```'} bash
-    ${installation}
-    ${'```'}`
+    ${installation}`
 
   } else {
 
-    return `
-  No installation needed. Visit deployed application at ${deployed_link}`
+    return `No installation needed.Visit deployed application at ${deployed_link} `
 
   }
 
@@ -84,12 +81,11 @@ function renderTests(confirm_test, tests) {
   if (confirm_test) {
 
     return `
-    ${tests}`
+    ${tests} `
 
   } else {
 
-    return `
-    There are currently no tests for this application.`
+    return `There are currently no tests for this application.`
   }
 
 };
@@ -99,12 +95,11 @@ function renderContributing(confirm_guidelines, additional_guidelines) {
   if (confirm_guidelines) {
 
     return `
-    ${additional_guidelines}`
+    ${additional_guidelines} `
 
   } else {
 
-    return `
-    Please refer to the [Contributor Covenenant](https://www.contributor-covenant.org/) for guidelines on contributing on this project.`
+    return `Please refer to the [Contributor Covenenant](https://www.contributor-covenant.org/) for guidelines on contributing on this project.`
 
   }
 
@@ -127,7 +122,7 @@ function generateMarkdown(questionsData) {
   * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
-  * [Questions](#questions)"
+  * [Questions](#questions)
 
   ## Installation
   ${renderInstallation(deployed_link, installation, confirm_installation)}
@@ -147,8 +142,7 @@ function generateMarkdown(questionsData) {
   ## Questions
   For any inquiries or questions, please contact ${name} via:
   * GitHub: [${github}](https://github.com/${github})
-  * Email: <${email}>
-  `;
+  * Email: <${email}>`;
 
 };
 

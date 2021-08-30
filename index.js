@@ -14,7 +14,7 @@ const mockData =
     installation: 'git clone git@github.com:anthonypena97/README-generator.git',
     depolyed_link: 'weather.com',
     usage: 'Enter city name in input field.',
-    license: 'GNU GPLv3',
+    license: 'MIT License',
     confirm_guidelines: false,
     confirm_test: false
 }
@@ -284,7 +284,7 @@ function init() {
 }
 
 // Function call to initialize app
-// init();
+init();
 
 // TESTS
-console.log(generateMarkdown(mockData));
+// console.log(generateMarkdown(mockData));
