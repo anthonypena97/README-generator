@@ -37,7 +37,8 @@
   false
 
   ## Questions
-  For any inquiries regarding README.gen, please contact Anthony Pena via:
+  
+  For any inquiries or questions, please contact Anthony Pena via:
   * GitHub: [anthonypena97](https://github.com/anthonypena97)
   * Email: <apena5@alumni.jh.edu>
 
