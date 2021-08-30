@@ -1,6 +1,8 @@
 # README Generator
 ![MIT License badge](https://img.shields.io/badge/license-MIT_License-green)
 
+![README-Generator-Demo](https://user-images.githubusercontent.com/79285555/131401795-6c4b3038-4b0f-4aaa-8de6-3ab4ffe44a66.gif)
+
  ## Description
  Node.JS application for generating a README file through command line prompts
 
@@ -17,17 +19,17 @@
     git clone git@github.com:anthonypena97/README-generator.git
 
 ## Usage
--After installation, open terminal in the applications path and enter node index.js into the command line. 
+- After installation, open terminal in the applications path and enter node index.js into the command line. 
 
--Once confirming you would like the question process to begin, you will be prompted with various questions in order to populate your README file. 
+- Once confirming you would like the question process to begin, you will be prompted with various questions in order to populate your README file. 
 
--If succesful, you will receive a message in the terminal stating your file is complete. 
+- If succesful, you will receive a message in the terminal stating your file is complete. 
 
--You will be able to locate your README within the dist folder in the root folder of the application. 
+- You will be able to locate your README within the dist folder in the root folder of the application. 
 
--Remember to move or copy this new README file as it gets replaced after everytime the application is called. 
+- Remember to move or copy this new README file as it gets replaced after everytime the application is called. 
 
--if you must restart, or would like to leave the application during the question process - type control +  c in the terminal.
+- if you must restart, or would like to leave the application during the question process - type control +  c in the terminal.
 
 ## License
 MIT License
