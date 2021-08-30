@@ -13,13 +13,15 @@ function renderLicenseSection(license) { }
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(questionsData) {
 
+  const { project_title, description, installation, usage, license, confirmation_guidelines, confirmation_test, github, name, email } = questionsData;
+
   return `
-  # ${questionsData.project_title} 
+  # ${project_title}
   ![MIT License badge](https://img.shields.io/badge/license-MIT_License-green)
 
   ## Description
 
-  Here goes the project description 
+ ${description}
 
   ## Table of Contents
   * [Installation](#installation)
@@ -31,26 +33,33 @@ function generateMarkdown(questionsData) {
 
   ## Installation
 
-
   ${'```'} bash
+
+  ${installation}
 
   ${'```'}
 
   ## Usage
 
+  ${usage}
+
   ## License
-  [MIT](https://choosealicense.com/licenses/mit/)
+  ${license}
 
   ## Contributing
+  ${confirmation_guidelines}
+
 
   ## Tests
+  ${confirmation_test}
 
   ## Questions
-  For any inquiries regarding README.gen, please contact Jake Pedigo via:
-  * GitHub: [anthonypena97](https://github.com/anthonypena97)
-  * Email: <apena5b@alumni.jh.edu>
+  For any inquiries regarding README.gen, please contact ${name} via:
+  * GitHub: [${github}](https://github.com/${github})
+  * Email: <${email}>
 
   `;
-}
+
+};
 
 module.exports = generateMarkdown;

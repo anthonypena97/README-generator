@@ -1,10 +1,10 @@
 
-  # Weather Dashboard 
+  # README Generator
   ![MIT License badge](https://img.shields.io/badge/license-MIT_License-green)
 
   ## Description
 
-  Here goes the project description 
+ Node application for generating a project README file
 
   ## Table of Contents
   * [Installation](#installation)
@@ -16,23 +16,29 @@
 
   ## Installation
 
-
   ``` bash
+
+  git clone git@github.com:anthonypena97/README-generator.git
 
   ```
 
   ## Usage
 
+  Visit deployed site
+
   ## License
-  [MIT](https://choosealicense.com/licenses/mit/)
+  undefined
 
   ## Contributing
+  false
+
 
   ## Tests
+  false
 
   ## Questions
-  For any inquiries regarding README.gen, please contact Jake Pedigo via:
+  For any inquiries regarding README.gen, please contact Anthony Pena via:
   * GitHub: [anthonypena97](https://github.com/anthonypena97)
-  * Email: <apena5b@alumni.jh.edu>
+  * Email: <apena5@alumni.jh.edu>
 
   

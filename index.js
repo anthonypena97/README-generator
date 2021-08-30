@@ -8,9 +8,10 @@ const mockData =
     name: 'Anthony Pena',
     github: 'anthonypena97',
     email: 'apena5@alumni.jh.edu',
-    project_title: 'Weather Dashboard',
-    description: 'Application for collecting weather data and forecast',
-    confirmInstallation: false,
+    project_title: 'README Generator',
+    description: 'Node application for generating a project README file',
+    confirm_installation: true,
+    installation: 'git clone git@github.com:anthonypena97/README-generator.git',
     depolyed_link: 'weather.com',
     usage: 'Visit deployed site',
     licencse: 'MIT License',
@@ -90,7 +91,7 @@ const questions = [
     },
     {
         type: 'confirm',
-        name: 'confirmInstallation',
+        name: 'confirm_installation',
         message: 'Would you like to enter some information on the installation process [y] or provide a deployed link [n] ?',
         validate: installation => {
             if (installation) {
@@ -223,10 +224,7 @@ function writeToFile(markdown) {
                 return;
             }
 
-            resolve({
-                ok: true,
-                message: 'File created'
-            });
+            resolve("README SUCCESSFULLY CREATED! VISIT THE DIST FOLDER! :~)");
         });
     });
 
