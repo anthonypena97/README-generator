@@ -28,7 +28,7 @@ npm i
 node index.js
 ```
 
-- watch application walkthrough [video] (https://drive.google.com/file/d/1Iu24tXtI5K3oI1FQiL0ZT1uveDuA93Tt/view?usp=sharing)
+- Watch application walkthrough [video](https://drive.google.com/file/d/1Iu24tXtI5K3oI1FQiL0ZT1uveDuA93Tt/view?usp=sharing)
 
 ## Usage
 - After installation, open terminal in the applications path and enter node index.js into the command line. 
