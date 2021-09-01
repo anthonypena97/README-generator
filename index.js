@@ -224,7 +224,11 @@ function writeToFile(markdown) {
                 return;
             }
 
-            resolve("README SUCCESSFULLY CREATED! VISIT THE DIST FOLDER! :~)");
+            resolve(`
+           
+            README SUCCESSFULLY CREATED! VISIT THE DIST FOLDER! :~)
+
+            `);
         });
     });
 
@@ -316,7 +320,6 @@ function init() {
             if (confirmation.introduction) {
                 return inquirer.prompt(questions)
                     .then((answers) => {
-                        console.log(answers);
                         return generateMarkdown(answers);
                     })
                     .then((markdown) => {
@@ -331,7 +334,11 @@ function init() {
 
                 // IF USER DECIDES TO NOT START, THEN APPLICATION ENDS
             } else {
-                return console.log("Goodbye!");
+                return console.log(`
+            
+                TILL NEXT TIME!
+
+                `);
             }
         })
 
